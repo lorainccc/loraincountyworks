@@ -1,0 +1,26 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: $color__border-button;
+	border-radius: 3px;
+	background: $color__background-button;
+	color: rgba(0, 0, 0, 0.8);
+	line-height: 1;
+	padding: 0.6em 1em 0.4em;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+}
+
+.wp-element-button{
+	background:-webkit-gradient(linear,left top,left bottom,from(#1790e0),color-stop(50%,#1583cc),color-stop(51%,#147cc2),to(#1376b8));
+	background:linear-gradient(to bottom,#1790e0 0,#1583cc 50%,#147cc2 51%,#1376b8 100%)
+}

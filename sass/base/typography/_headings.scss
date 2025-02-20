@@ -1,0 +1,33 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $header__main;
+	clear: both;
+}
+
+h1, h2{
+	color: $lc__blue;
+    font-weight: 700;
+}
+
+h1{
+	font-size: 2.2875rem;
+    margin-top: 0.25rem;
+}
+
+h2{
+	line-height: 110%;
+    margin-top: 0.25rem;
+    font-size: 1.725rem;
+}
+
+div.entry-content h3, div.page-content h3{
+	color: $lc__med_gray;
+	line-height:38px;
+	margin-top:40px;
+	font-size:1.525rem;
+	font-weight:600
+}

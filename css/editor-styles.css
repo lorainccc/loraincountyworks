@@ -1,0 +1,14 @@
+body{
+    font-family: 'Open Sans';
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Raleway';
+}
+
+/* Main column width */
+.wp-block {
+    max-width: 960px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}

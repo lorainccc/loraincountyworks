@@ -1,0 +1,67 @@
+body {
+	background: $color__background-body; // Fallback for when there is no custom background color defined.
+}
+
+a, a:focus {
+	color: $lc__blue;
+	font-weight: 500;
+}
+
+.lc-full-row{
+	width:100%;
+	max-width:100%;
+}
+
+.middle{
+	vertical-align: middle;
+}
+
+.lc-hero-spacer{
+	height: 72px;
+	min-height:72px;
+	max-height:72px;
+}
+
+.lc-page-padding{
+	padding: 0;
+}
+
+div ul li{
+	line-height: 27px;
+}
+
+.gform_wrapper.gravity-theme .gfield-choice-input{
+	vertical-align: baseline !important;
+}
+
+.wp-block-kadence-advancedbtn > a.wp-block-kadence-singlebtn{
+	text-decoration:none;
+}
+
+@media screen and (min-width: 64em) and (max-width: 93.75em) {
+	.custom-logo{
+		width: auto;
+		height: auto;
+		margin: 22px 10px;
+	}
+}
+
+@media screen and (max-width: 63.9375em) {
+
+	.custom-logo{
+		width: auto;
+		height: 40px;
+		margin: 15px 10px;
+	}
+	
+	.lc-hero-spacer{
+		height: 32px;
+		min-height:32px;
+		max-height:32px;
+	}
+
+	.lc-page-padding{
+		padding: 0 5px;
+	}
+
+}
