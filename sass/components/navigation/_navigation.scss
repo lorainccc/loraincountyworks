@@ -5,7 +5,7 @@ nav.main-navigation {
 		margin-top: 15px;
 
 		li a{
-			background-color: $lc__dk_blue;
+			background-color: $lc__dk_red;
 			color: $lc__off_white;
 		}
 	}
@@ -32,7 +32,7 @@ header{
 	}
 
 	.menu:not(#menu-header-shortcuts):not(.vertical) li:hover, header .dropdown.menu .submenu {
-		background: $lc__dk_blue;
+		background: $lc__dk_red;
 		border: 0;
 	}
 
@@ -54,7 +54,7 @@ header{
 	}
 
 	.menu .is-active > a {
-		background: $lc__dk_blue;
+		background: $lc__dk_red;
 		color: $lc__off_white;
 	}
 
@@ -71,7 +71,7 @@ header{
 
 	.dropdown.menu .submenu li:hover {
 		background: $lc__off_white !important;
-		border-top: 1px solid $lc__dk_blue !important;
+		border-top: 1px solid $lc__dk_red !important;
 		
 		a {
 			color: $lc__dk_blue;
@@ -151,7 +151,7 @@ a.lccc-home-btn:hover{
 		position: absolute;
 		height: 6px;
 		width: 100%;
-		background: $lc__yellow;
+		background: $lc__white;
 		border-radius: 5px;
 		opacity: 1;
 		left: 0;
@@ -245,7 +245,7 @@ a.lccc-home-btn:hover{
 	  }
 
 	li.current_page_item {
-		background-color: $lc__dk_blue;
+		background-color: $lc__dk_red;
 			a {
 				color: $lc__white;
 			}
@@ -255,9 +255,9 @@ a.lccc-home-btn:hover{
 		visibility: visible;
 		width: 100%;
 		height: 100%;
-		background-color: #0155A5;
+		background-color: $lc__dk_red;
 		position: fixed;
-		top: -36px;
+		top: 0;
 		z-index: 9999999;
 		transform: translateY(calc(100vh - 100%));
 		opacity: 1;
@@ -270,7 +270,7 @@ a.lccc-home-btn:hover{
 			width: 100%;
 			margin: 0;
 			padding: 0;
-			background-color: $lc__dk_blue;
+			background-color: $lc__dk_red;
 
 			li{
 				width:100%;
@@ -291,7 +291,7 @@ a.lccc-home-btn:hover{
 	  }
 
 	  .drilldown a{
-		background-color: $lc__dk_blue;
+		background-color: $lc__dk_red;
 		color: $lc__off_white;
 	  }
 

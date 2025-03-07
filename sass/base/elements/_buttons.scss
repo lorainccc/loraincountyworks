@@ -21,6 +21,9 @@ input[type="submit"] {
 }
 
 .wp-element-button{
-	background:-webkit-gradient(linear,left top,left bottom,from(#1790e0),color-stop(50%,#1583cc),color-stop(51%,#147cc2),to(#1376b8));
-	background:linear-gradient(to bottom,#1790e0 0,#1583cc 50%,#147cc2 51%,#1376b8 100%)
+	background:-webkit-gradient(linear,left top,left bottom,from(#bf2333),color-stop(50%,#981c28),color-stop(51%,#981c28),to(#72151e));
+	background:linear-gradient(to bottom,#bf2333 0,#981c28 50%,#981c28 51%,#72151e 100%);
+	border-radius: 10px;
+	padding: 10px 16px;
+	height: 45px;
 }

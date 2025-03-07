@@ -14,7 +14,7 @@
 <footer id="colophon" class="site-footer hide-for-print" role="contentinfo">
 	<div class="grid-container">	
 		<div class="grid-x grid-margin-x">
-		    <div class="cell medium-3"> <a href="/" title="Lorain County Community College Home"><img class="footer-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="Lorain County Community College Home" width="220" height="42.5"/></a>
+		    <div class="cell medium-3"> <a href="/" title="Lorain County Community College Home"><img class="footer-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/footer-logo.png" alt="Lorain County Works Home" width="135" height="110"/></a>
 				<h2>Connect with LCCC</h2>
 				<ul class="menu footer-sm-links footer-social">
 				<?php 
@@ -119,6 +119,11 @@
 						?>
 					</nav><!-- .main-navigation -->
 				<?php endif; ?>
+			</div>
+		</div>
+		<div class="grid-x grid-x-margin">
+			<div class="small-12 cell">
+				<p>&copy; <?php echo the_date('Y'); ?> | OhioMeansJobs - Lorain County</p>
 			</div>
 		</div>
 	</div>

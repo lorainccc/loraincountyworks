@@ -24,13 +24,10 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'lorainccc-microsite' ); ?></a>
-	<div class="cell small-12 lc-header">
-
 		<header id="masthead" class="site-header">
 			<div class="grid-container">
 				<div class="grid-x grid-margin-x">
-
-					<div class="cell small-8 large-2">
+					<div class="cell small-12 medium-5">
 						<div class="site-branding">
 							<?php
 							the_custom_logo();
@@ -50,47 +47,58 @@
 							<?php endif; ?>
 						</div><!-- .site-branding -->
 					</div>
+					<div class="cell medium-offset-4 medium-3">
+					<?php if ( is_active_sidebar( 'lc-search-sidebar' ) ) { 
+																		dynamic_sidebar( 'lc-search-sidebar' ); 
+										}		?>
 
-					<div class="cell small-4 large-7">
-						<div class="lc-nav-container show-for-small-only">
-							<div id="lc-nav-icon">
-								<span></span>
-								<span></span>
-								<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="lc-header">
+				<div class="grid-container">
+					<div class="grid-x grid-margin-x">
+						<div class="cell small-12">
+							<div class="lc-nav-container show-for-small-only">
+								<div id="lc-nav-icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
 							</div>
-						</div>
-						<div class="lc-nav-container show-for-medium-only">
-							<div id="lc-nav-icon">
-								<span></span>
-								<span></span>
-								<span></span>
+							<div class="lc-nav-container show-for-medium-only">
+								<div id="lc-nav-icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
 							</div>
-						</div>
-						<div class="show-for-large">
-							<nav id="site-navigation" class="main-navigation">
-							<?php
-								$lc_align_setting = get_option('lc_navigation_alignment', '');
-								if($lc_align_setting == ''){
-									$lc_align_setting = 'align-left';
-								}
+							<div class="show-for-large">
+								<nav id="site-navigation" class="main-navigation">
+								<?php
+									$lc_align_setting = get_option('lc_navigation_alignment', '');
+									if($lc_align_setting == ''){
+										$lc_align_setting = 'align-left';
+									}
 
-								wp_nav_menu(
-									array(
-										'theme_location' => 'primary-microsite',
-										'menu_id'        => 'primary-microsite',
-										'class'			=> 'menu-centered',
-										'items_wrap'      => '<ul id="%1$s" class="%2$s ' . $lc_align_setting . '" role="menubar" data-dropdown-menu>%3$s</ul>',
-										'walker' => new lc_top_bar_menu_walker,
-									)
-								);
-								?>
-							</nav>
+									wp_nav_menu(
+										array(
+											'theme_location' => 'primary-microsite',
+											'menu_id'        => 'primary-microsite',
+											'class'			=> 'menu-centered',
+											'items_wrap'      => '<ul id="%1$s" class="%2$s ' . $lc_align_setting . '" role="menubar" data-dropdown-menu>%3$s</ul>',
+											'walker' => new lc_top_bar_menu_walker,
+										)
+									);
+									?>
+								</nav>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header><!-- #masthead -->
-	</div>
+	
 	<div id="lc-nav-menu-container" class="show-for-small-only lc-nav-menu-container">
 		<?php
 			wp_nav_menu(

@@ -24,9 +24,9 @@ function lorainccc_microsite_setup() {
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
 		* If you're building a theme based on LCCC Microsite, use a find and replace
-		* to change 'lorainccc-microsite' to the name of your theme in all the template files.
+		* to change 'lc-works' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'lorainccc-microsite', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'lc-works', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -49,7 +49,7 @@ function lorainccc_microsite_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-      		'primary-microsite' => esc_html__( 'Primary Microsite', 'lorainccc-microsite' ),
+      		'primary-microsite' => esc_html__( 'Primary Microsite', 'lc-works' ),
 		)
 	);
 
@@ -122,15 +122,26 @@ add_action( 'after_setup_theme', 'lorainccc_microsite_content_width', 0 );
 function lorainccc_microsite_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'lorainccc-microsite' ),
+			'name'          => esc_html__( 'Sidebar', 'lc-works' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'lorainccc-microsite' ),
+			'description'   => esc_html__( 'Add widgets here.', 'lc-works' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'LorainCountyWorks Search Sidebar', 'lc-works' ),
+		'id'            => 'lc-search-sidebar',
+		'description'   => esc_html__( 'Add widgets here.', 'lc-works' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
 }
 add_action( 'widgets_init', 'lorainccc_microsite_widgets_init' );
 
@@ -158,11 +169,8 @@ function lorainccc_microsite_foundation_scripts() {
 		wp_enqueue_script( 'foundation-init-js', '/wp-content/themes/lccc-framework/foundation-681/js/app.js', array( 'jquery' ), '1', true );
 	
 		//Adds Google Analytics, Google Tag, Hotjar and Eloqua to header
-		wp_enqueue_script( 'lc-eloqua-scripts', get_stylesheet_directory_uri() . '/js/lc-eloqua.js', array(), '20180828', false);
 		wp_enqueue_script( 'lc-google-analytic-parent-async', 'https://www.googletagmanager.com/gtag/js?id=G-Z27HB3ECDG', array(), '20221117', false); 
 		wp_enqueue_script( 'lc-google-analytics-scripts', get_stylesheet_directory_uri() . '/js/lc-google-analytics.js', array( 'lc-google-analytic-parent' ), '20180828', false);
-		wp_enqueue_script( 'lc-google-tag-scripts', get_stylesheet_directory_uri() . '/js/lc-google-tag.js', array(), '20180828', false);
-		wp_enqueue_script( 'lc-siteimprove-scripts', get_stylesheet_directory_uri() . '/js/lc-siteimprove.js', array(), '20180828', false);
 
 		// wp_enqueue_script( 'lorainccc_micro-function-script', get_stylesheet_directory_uri() . '/js/functions.js', array( 'jquery' ), '20150330', true );
 	
@@ -174,11 +182,11 @@ add_action( 'wp_enqueue_scripts', 'lorainccc_microsite_foundation_scripts' );
  */
 function lorainccc_microsite_scripts() {
 
-	wp_enqueue_style( 'lorainccc-microsite-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'lorainccc-microsite-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'lc-works-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_style_add_data( 'lc-works-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'lorainccc-microsite-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'lorainccc-microsite-mobile-navigation', get_template_directory_uri() . '/js/lc-mobile-nav.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'lc-works-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'lc-works-mobile-navigation', get_template_directory_uri() . '/js/lc-mobile-nav.js', array( 'jquery' ), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

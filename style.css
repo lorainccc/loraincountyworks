@@ -559,8 +559,21 @@ div ul li {
     padding: 0 5px;
   }
 }
+.site-branding {
+  margin: 0 0 20px 0;
+}
+
+.wp-block-search__input {
+  border-radius: 15px;
+}
+
+.wp-block-search__label {
+  display: none;
+}
+
 .lc-header {
   background: #bf2333;
+  width: 100%;
   height: 72px;
   max-height: 72px;
   min-height: 72px;
@@ -732,7 +745,10 @@ input[type=submit]:focus {
 }
 
 .wp-element-button {
-  background: linear-gradient(to bottom, #1790e0 0, #1583cc 50%, #147cc2 51%, #1376b8 100%);
+  background: linear-gradient(to bottom, #bf2333 0, #981c28 50%, #981c28 51%, #72151e 100%);
+  border-radius: 10px;
+  padding: 10px 16px;
+  height: 45px;
 }
 
 input[type=text],
@@ -796,7 +812,7 @@ nav.main-navigation ul.menu {
   margin-top: 15px;
 }
 nav.main-navigation ul.menu li a {
-  background-color: #0155A5;
+  background-color: #bf2333;
   color: #fefefe;
 }
 nav.main-navigation .menu-item-has-children > a {
@@ -814,7 +830,7 @@ header ul#header-menu li a {
   font-weight: 500;
 }
 header .menu:not(#menu-header-shortcuts):not(.vertical) li:hover, header header .dropdown.menu .submenu {
-  background: #0155A5;
+  background: #bf2333;
   border: 0;
 }
 header li.is-submenu-item {
@@ -831,7 +847,7 @@ header .submenu li {
   text-align: left;
 }
 header .menu .is-active > a {
-  background: #0155A5;
+  background: #bf2333;
   color: #fefefe;
 }
 header ul.is-dropdown-submenu {
@@ -845,7 +861,7 @@ header ul.is-dropdown-submenu {
 }
 header .dropdown.menu .submenu li:hover {
   background: #fefefe !important;
-  border-top: 1px solid #0155A5 !important;
+  border-top: 1px solid #bf2333 !important;
 }
 header .dropdown.menu .submenu li:hover a {
   color: #0155A5;
@@ -907,7 +923,7 @@ a.lccc-home-btn:hover {
     position: absolute;
     height: 6px;
     width: 100%;
-    background: #ffc600;
+    background: #fff;
     border-radius: 5px;
     opacity: 1;
     left: 0;
@@ -960,7 +976,7 @@ a.lccc-home-btn:hover {
     width: 100%;
   }
   li.current_page_item {
-    background-color: #0155A5;
+    background-color: #bf2333;
   }
   li.current_page_item a {
     color: #fff;
@@ -969,9 +985,9 @@ a.lccc-home-btn:hover {
     visibility: visible;
     width: 100%;
     height: 100%;
-    background-color: #0155A5;
+    background-color: #bf2333;
     position: fixed;
-    top: -36px;
+    top: 0;
     z-index: 9999999;
     transform: translateY(calc(100vh - 100%));
     opacity: 1;
@@ -981,7 +997,7 @@ a.lccc-home-btn:hover {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #0155A5;
+    background-color: #bf2333;
   }
   #lc-nav-menu-container ul.menu li {
     width: 100%;
@@ -996,7 +1012,7 @@ a.lccc-home-btn:hover {
     color: #0155A5;
   }
   .drilldown a {
-    background-color: #0155A5;
+    background-color: #bf2333;
     color: #fefefe;
   }
   .drilldown .is-drilldown-submenu-parent > a::after {
@@ -1091,6 +1107,10 @@ a.lc-no-underline {
 }
 .widget select {
   max-width: 100%;
+}
+
+.widget_search {
+  margin: 40px 0;
 }
 
 /* Media
