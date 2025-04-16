@@ -40,9 +40,7 @@ if (has_post_thumbnail($post->ID)) {
 
 
 
-<div class="grid-container">
-		<div class="grid-x grid-margin-x lc-page-padding">
-			<div class="cell small-12">
+
 					<?php
 					while ( have_posts() ) :
 						the_post();

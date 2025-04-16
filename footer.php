@@ -7,9 +7,7 @@
  * @package LCCC Framework
  */
 ?>
-		</div><!-- #content -->
-	</div><!--close grid margin container -->
-</div><!-- close grid-container -->
+
 
 <footer id="colophon" class="site-footer hide-for-print" role="contentinfo">
 	<div class="grid-container">	

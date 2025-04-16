@@ -47,7 +47,7 @@
 							<?php endif; ?>
 						</div><!-- .site-branding -->
 					</div>
-					<div class="cell medium-offset-4 medium-3">
+					<div class="cell hide-for-small-only medium-offset-4 medium-3">
 					<?php if ( is_active_sidebar( 'lc-search-sidebar' ) ) { 
 																		dynamic_sidebar( 'lc-search-sidebar' ); 
 										}		?>

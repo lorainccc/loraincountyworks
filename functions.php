@@ -275,25 +275,6 @@ function lc_drill_menu_fallback($args)
 	echo '<ul class="vertical menu" data-drilldown="">'.$fallback.'</ul>';
 }
 
-// Add closing Divs to make row layout block expand full page then add div code back to continue the responsive framework
-function lc_full_page_block( $block_content, $block ){
-
-	if( $block['blockName'] === 'kadence/rowlayout'){
-		$content = '</div></div></div>';
-		$content .= '<div class="lc-full-row">';
-		$content .= $block_content;
-		$content .= '</div>';
-		$content .= '<div class="grid-container">';
-		$content .= '  <div class="cell small-12">&nbsp;</div>';
-		$content .= '  <div class="cell small-12">';
-
-		return $content;
-	}
-
-	return $block_content;
-}
-add_filter( 'render_block', 'lc_full_page_block', 10, 2);
-
 /** Block Editor Style Theme Support
  * 
  *  Added support for front-end styles in Block Editor
