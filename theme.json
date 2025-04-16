@@ -6,49 +6,54 @@
 			"custom": false,
 			"palette": [
 				{
-					"slug": "teal",
-					"color": "#008290",
-					"name": "Teal"
+					"slug": "lt-gray",
+					"color": "#dddddd",
+					"name": "Light Gray"
 				},
 				{
-					"slug": "orange",
-					"color": "#ba4c00",
-					"name": "Orange"
+					"slug": "med-gray",
+					"color": "#848484",
+					"name": "Medium Gray"
 				},
 				{
-					"slug": "green",
-					"color": "#2a8000",
-					"name": "Green"
+					"slug": "dk-gray",
+					"color": "#404040",
+					"name": "Dark Gray"
 				},
 				{
-					"slug": "purple",
-					"color": "#67296e",
-					"name": "Purple"
+					"slug": "dk-red",
+					"color": "#bf2333",
+					"name": "Dark Red"
 				},
 				{
 					"slug": "blue",
-					"color": "#0055a5",
+					"color": "#0d3e76",
 					"name": "Blue"
 				},
 				{
-					"slug": "dark-blue",
-					"color": "#0556a4",
-					"name": "Medium Blue"
+					"slug": "dk-blue",
+					"color": "#0155A5",
+					"name": "Dark Blue"
 				},
 				{
 					"slug": "light-blue",
-					"color": "#2f8ccc",
+					"color": "#188FDD",
 					"name": "Light Blue"
 				},
 				{
-					"slug": "gray",
-					"color": "#6d6d6d",
-					"name": "Gray"
+					"slug": "dkr-blue",
+					"color": "#0c3b78",
+					"name": "Darker Blue"
 				},
 				{
 					"slug": "white",
 					"color": "#fff",
 					"name": "White"
+				},
+				{
+					"slug": "off-white",
+					"color": "#fefefe",
+					"name": "Off White"
 				},
 				{
 					"slug": "black",
