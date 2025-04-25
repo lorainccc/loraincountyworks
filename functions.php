@@ -99,6 +99,13 @@ function lorainccc_microsite_setup() {
 			'flex-height' => true,
 		)
 	);
+
+	add_theme_support( 'custom-spacing' );
+
+	add_theme_support( 'appearance-tools' );
+
+	add_theme_support( 'border' );
+	
 }
 add_action( 'after_setup_theme', 'lorainccc_microsite_setup' );
 

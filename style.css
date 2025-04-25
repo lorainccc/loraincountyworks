@@ -48,10 +48,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
-.yellow {
-  color: #ffc600;
-}
-
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -651,7 +647,7 @@ table {
 }
 .site-footer h2 {
   font-size: 0.75rem;
-  color: #ffc600;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -893,8 +889,8 @@ a.lccc-home-btn {
 }
 
 a.lccc-home-btn:hover {
-  border: 1px solid #ffc600;
-  color: #ffc600;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 /* Small menu. */
@@ -1087,6 +1083,12 @@ a.lc-no-underline {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+.sidebar-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /* Comments

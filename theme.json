@@ -1,5 +1,5 @@
 {
-	"version": 2,
+	"version": 3,
 	"settings": {
 		"color": {
             "defaultPalette": false,
@@ -66,6 +66,20 @@
 					"name": "Transparent"
 				}
 			]
+		},
+		"blocks": {
+			"lccc-foundation-blocks/lc-content-block":{
+				"border": {
+					"color": true,
+					"radius": true,
+					"style": true,
+					"width": true
+				},
+				"spacing":{
+					"margin": true,
+					"padding": true
+				}
+			}
 		}
 	}
 }
