@@ -23,6 +23,8 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
+	<div class="page-wrapper">
+		<div class="page-content-wrapper">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'lorainccc-microsite' ); ?></a>
 		<header id="masthead" class="site-header">
 			<div class="grid-container">
@@ -76,7 +78,7 @@
 							<div class="show-for-large">
 								<nav id="site-navigation" class="main-navigation">
 								<?php
-									$lc_align_setting = get_option('lc_navigation_alignment', '');
+									$lc_align_setting = get_option('lcw_navigation_alignment', '');
 									if($lc_align_setting == ''){
 										$lc_align_setting = 'align-left';
 									}
@@ -100,7 +102,9 @@
 		</header><!-- #masthead -->
 	
 	<div id="lc-nav-menu-container" class="show-for-small-only lc-nav-menu-container">
-		<?php
+	<?php if ( is_active_sidebar( 'lc-mobile-search-sidebar' ) ) { 
+			dynamic_sidebar( 'lc-mobile-search-sidebar' ); 
+			}		
 			wp_nav_menu(
 				array(
 					'theme_location' => 'primary-microsite',
@@ -113,7 +117,9 @@
 			?>
 	</div>
 	<div id="lc-nav-menu-container" class="show-for-medium-only lc-nav-menu-container">
-		<?php
+	<?php if ( is_active_sidebar( 'lc-mobile-search-sidebar' ) ) { 
+			dynamic_sidebar( 'lc-mobile-search-sidebar' ); 
+			}
 			wp_nav_menu(
 				array(
 					'theme_location' => 'primary-microsite',

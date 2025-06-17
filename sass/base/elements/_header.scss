@@ -4,10 +4,16 @@
 
 .wp-block-search__input{
 	border-radius: 15px;
+	height: 41px;
+	margin: 2px 0 0 0;
 }
 
 .wp-block-search__label{
-	display: none;
+	clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
 }
 
 .lc-header{

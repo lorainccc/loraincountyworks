@@ -16,8 +16,11 @@
 <!-- wp:lccc-foundation-blocks/lc-grid-container-block -->
 <div class="wp-block-lccc-foundation-blocks-lc-grid-container-block grid-container"><!-- wp:lccc-foundation-blocks/lc-grid-margin-block -->
 <div class="wp-block-lccc-foundation-blocks-lc-grid-margin-block grid-x grid-x-margin"><!-- wp:lccc-foundation-blocks/lc-cell-block -->
-<div class="wp-block-lccc-foundation-blocks-lc-cell-block cell"><!-- wp:paragraph -->
-<p></p>
+<div class="wp-block-lccc-foundation-blocks-lc-cell-block cell"><!-- wp:spacer {"height":"35px"} -->
+<div style="height:35px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+<!-- wp:paragraph -->
+ <p></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:lccc-foundation-blocks/lc-cell-block --></div>
 <!-- /wp:lccc-foundation-blocks/lc-grid-margin-block --></div>
@@ -32,8 +35,11 @@
 <!-- wp:lccc-foundation-blocks/lc-grid-container-block -->
 <div class="wp-block-lccc-foundation-blocks-lc-grid-container-block grid-container"><!-- wp:lccc-foundation-blocks/lc-grid-margin-block -->
 <div class="wp-block-lccc-foundation-blocks-lc-grid-margin-block grid-x grid-x-margin"><!-- wp:lccc-foundation-blocks/lc-cell-block -->
-<div class="wp-block-lccc-foundation-blocks-lc-cell-block cell"><!-- wp:paragraph -->
-<p></p>
+<div class="wp-block-lccc-foundation-blocks-lc-cell-block cell"><!-- wp:spacer {"height":"35px"} -->
+<div style="height:35px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+<!-- wp:paragraph -->
+ <p></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:lccc-foundation-blocks/lc-cell-block --></div>
 <!-- /wp:lccc-foundation-blocks/lc-grid-margin-block --></div>

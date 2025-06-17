@@ -1,20 +1,27 @@
 .site-footer{
-    margin-top: 5rem;
+    height: 385px;
+    //margin-top: -385px;
+
     background-color: $lc__dk_gray;
     width: 100%;
     padding: 2rem 0 4rem 0;
-    font-size: .75rem;
+    font-size: 1rem;
     color: $lc__white;
 
     h2 {
-        font-size: .75rem;
+        font-size: 1.2rem;
         color:$lc__white;
         text-transform: uppercase;
         font-weight: 700;
+        text-align:center;
+        line-height: 1.4rem;
+        span.lcw-titlecase{
+            text-transform:none;
+        }
     }
     
     p, a, a:hover, a:visited, a:link{
-        font-size: .75rem;
+        font-size: 1rem;
         color: $lc__white;
     }
 
@@ -23,7 +30,9 @@
     }
 
     .footer-logo {
-        margin-bottom: 2.5rem;
+        display: block;
+        width: 135px;
+        margin: 0 auto 2.5rem auto;
     }
 
     .footer-sm-links{
@@ -51,10 +60,22 @@
     .menu > li >a {
         padding: 0 0.25rem 0 0;
     }
+
+    div.lcw-footer-menu {
+        div.cell {
+            margin: 5px 0;
+            a {
+                font-size: 1rem;
+                color: #fff;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 39.9375em) {
     .site-footer{
+        height: revert;
         text-align: center;
 
         ul {

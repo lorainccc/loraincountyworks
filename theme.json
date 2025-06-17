@@ -1,6 +1,8 @@
 {
-	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.5/theme.json",
+	"version": 2,
 	"settings": {
+		"appearanceTools": true,
 		"color": {
             "defaultPalette": false,
 			"custom": false,
@@ -68,7 +70,7 @@
 			]
 		},
 		"blocks": {
-			"lccc-foundation-blocks/lc-content-block":{
+			"lccc-foundation-blocks/lc-empty-block":{
 				"border": {
 					"color": true,
 					"radius": true,

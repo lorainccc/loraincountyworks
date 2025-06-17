@@ -1,5 +1,21 @@
+html, body{
+	height: 100%;
+	margin: 0;
+}
+
 body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
+	color: $lc__dk_gray;
+}
+
+div.page-wrapper{
+	min-height: 100%;
+
+	div.page-content-wrapper{
+		padding-bottom: 20px;
+		//padding-bottom: 300px;
+	}
+
 }
 
 a, a:focus {

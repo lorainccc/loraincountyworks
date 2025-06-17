@@ -14,7 +14,7 @@
 
 get_header();
 
-global $post;
+/* global $post;
 
 if (has_post_thumbnail($post->ID)) {
  $image = get_the_post_thumbnail_url( $post->ID , 'full' );
@@ -27,14 +27,14 @@ if (has_post_thumbnail($post->ID)) {
   *  The extra div is for the floating header to attach to and push the hero image down so the floating header doesn't cut it off.
   */
 
- echo '<div class="cell small-12 lc-hero-spacer">&nbsp;</div>';
+/*  echo '<div class="cell small-12 lc-hero-spacer">&nbsp;</div>';
  echo '<div class="cell small-12 lc-hero-image"></div>';
 
-} else {
+/* } else {
  echo '<div class="grid-container">';
  echo '  <div class="cell small-12 lc-hero-spacer">&nbsp;</div>';
  echo '</div>';
-}
+} */
 
 ?>
 
